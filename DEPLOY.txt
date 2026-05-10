@@ -1,0 +1,13 @@
+讯渡纳酒台 · 抖音云登录服务（精简版，仅 /api/login + /api/health）
+
+一、环境变量（抖音云控制台 → 服务设置 → 环境变量）
+  MINI_APP_ID      = 小程序 AppID（与开发者工具一致）
+  MINI_APP_SECRET  = 小程序 AppSecret（勿泄露到前端）
+
+二、部署方式（任选）
+  1）CLI 构建镜像并推送（见控制台「镜像部署」说明）
+  2）或将本目录合并进官方模板仓库后 Git 部署
+
+三、联调
+  发布后路径：https://你的域名/api/login  POST JSON {"code":"..."}
+  小程序侧填写 config.cloud.js 的 serviceID、envID，使用 utils/cloud.js 调用。

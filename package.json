@@ -1,0 +1,15 @@
+{
+  "name": "xunduna-cloud-login",
+  "version": "1.0.0",
+  "private": true,
+  "description": "讯渡纳酒台 · 抖音云 Koa：登录 code 换 openid",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.1",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1"
+  }
+}
