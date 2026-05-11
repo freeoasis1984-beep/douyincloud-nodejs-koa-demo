@@ -1,4 +1,4 @@
 #!/bin/sh
-# 抖音云容器约定入口：/opt/application/run.sh
 set -e
+cd /opt/application
 exec node index.js
